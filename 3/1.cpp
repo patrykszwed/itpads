@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
     int dimensions = 3;
 
     oneToAllBroadcast(dimensions, process_number, message);
-
+    printf("Processor %d has message %d\n", process_number, message);
     MPI_Finalize();
     return 0;
 }
