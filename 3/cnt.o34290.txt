@@ -1,0 +1,70 @@
+Process with number 3 sent message to the process with number 4
+Process with number 2 will receive a message from the process with number 3
+Process with number 0 sent message to the process with number 1
+Process with number 4 will receive a message from the process with number 0
+Process with number 1 received a message from the process with number 2
+Process with number 2 will send a message to the process with number 3
+Process with number 3 received a message from the process with number 4
+Process with number 4 will send a message to the process with number 0
+Process with number 0 received a message from the process with number 1
+Process with number 1 will send a message to the process with number 2
+Process with number 2 received a message from the process with number 3
+Process with number 3 will send a message to the process with number 4
+Process with number 4 received a message from the process with number 0
+Process with number 0 will send a message to the process with number 1
+Process with number 2 sent message to the process with number 3
+Process with number 1 will receive a message from the process with number 2
+Process with number 4 sent message to the process with number 0
+Process with number 3 will receive a message from the process with number 4
+Process with number 1 sent message to the process with number 2
+Process with number 0 will receive a message from the process with number 1
+Process with number 3 sent message to the process with number 4
+Process with number 2 will receive a message from the process with number 3
+Process with number 0 sent message to the process with number 1
+Process with number 4 will receive a message from the process with number 0
+Process with number 1 received a message from the process with number 2
+Process with number 2 will send a message to the process with number 3
+Process with number 3 received a message from the process with number 4
+Process with number 4 will send a message to the process with number 0
+Process with number 0 received a message from the process with number 1
+Process with number 1 will send a message to the process with number 2
+Process with number 2 received a message from the process with number 3
+Process with number 3 will send a message to the process with number 4
+Process with number 4 received a message from the process with number 0
+Process 0) 0
+Process with number 2 sent message to the process with number 3
+Process with number 1 will receive a message from the process with number 2
+Process with number 4 sent message to the process with number 0
+Process with number 3 will receive a message from the process with number 4
+Process with number 3 received a message from the process with number 4
+Process with number 1 sent message to the process with number 2
+Process with number 0 will receive a message from the process with number 1
+Process with number 3 sent message to the process with number 4
+Process with number 2 will receive a message from the process with number 3
+Process 0) 1000
+Process 0) 2000
+Process 0) 3000
+Process 0) 4000
+Process with number 1 received a message from the process with number 2
+Process 2) 2
+Process 4) 4
+Process 4) 1004
+Process 4) 2004
+Process 4) 3004
+Process 4) 4004
+Process with number 0 received a message from the process with number 1
+Process 1) 1
+Process 1) 1001
+Process with number 2 received a message from the process with number 3
+Process 3) 3
+Process 3) 1003
+Process 2) 1002
+Process 2) 2002
+Process 2) 3002
+Process 2) 4002
+Process 1) 2001
+Process 1) 3001
+Process 1) 4001
+Process 3) 2003
+Process 3) 3003
+Process 3) 4003

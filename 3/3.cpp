@@ -54,9 +54,9 @@ void allToAll(int *inMsg, int *outMsg, int process_number, int number_of_process
         }
 
         process_index = (process_number - i) > 0 ? (process_number - i) : 0;
-        sendMessage(elements_to_send, number_of_elements, process_number, send_to_process);
         int process_from_index = (((process_number - i) % number_of_processes) + number_of_processes) %
-                number_of_processes; // indicates number of processor from which data was received
+                                 number_of_processes; // number of processor from which data was received
+        sendMessage(elements_to_send, number_of_elements, process_number, send_to_process);
         receiveMessage(inMsg, number_of_elements, receive_from_process, process_number);
         outMsg[process_from_index] = inMsg[process_index];
     }

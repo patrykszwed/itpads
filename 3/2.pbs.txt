@@ -1,0 +1,4 @@
+#PBS -l nodes=8
+#PBS -N cnt
+#PBS -j oe
+mpiexec ~/Labs3/2
