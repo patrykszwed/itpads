@@ -16,7 +16,7 @@ int main(int argc, char **argv) {
     MPI_Comm_size(MPI_COMM_WORLD, &numberOfProcesses);
     MPI_Comm_rank(MPI_COMM_WORLD, &processNumber);
 
-    int sizeOfMatrix = 512;
+    int sizeOfMatrix = 2048;
     int numberOfElements = sizeOfMatrix / numberOfProcesses;
     clock_t start,end;
 

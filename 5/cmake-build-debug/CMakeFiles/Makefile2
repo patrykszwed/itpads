@@ -73,12 +73,12 @@ clean: CMakeFiles/5.dir/clean
 CMakeFiles/5.dir/all:
 	$(MAKE) -f CMakeFiles\5.dir\build.make CMakeFiles/5.dir/depend
 	$(MAKE) -f CMakeFiles\5.dir\build.make CMakeFiles/5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Studia\ITPADS\5\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target 5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Studia\ITPADS\5\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target 5"
 .PHONY : CMakeFiles/5.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Studia\ITPADS\5\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Studia\ITPADS\5\cmake-build-debug\CMakeFiles 2
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/5.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Studia\ITPADS\5\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/5.dir/rule

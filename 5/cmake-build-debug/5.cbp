@@ -80,13 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Studia/ITPADS/5/from4.cpp">
-			<Option target="5"/>
-		</Unit>
 		<Unit filename="D:/Studia/ITPADS/5/main.cpp">
-			<Option target="5"/>
-		</Unit>
-		<Unit filename="D:/Studia/ITPADS/5/mainold.cpp">
 			<Option target="5"/>
 		</Unit>
 		<Unit filename="D:/Studia/ITPADS/5/CMakeLists.txt">

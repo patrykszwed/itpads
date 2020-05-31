@@ -122,33 +122,6 @@ depend:
 	$(MAKE) -f CMakeFiles\5.dir\build.make CMakeFiles/5.dir/build
 .PHONY : 5/fast
 
-from4.obj: from4.cpp.obj
-
-.PHONY : from4.obj
-
-# target to build an object file
-from4.cpp.obj:
-	$(MAKE) -f CMakeFiles\5.dir\build.make CMakeFiles/5.dir/from4.cpp.obj
-.PHONY : from4.cpp.obj
-
-from4.i: from4.cpp.i
-
-.PHONY : from4.i
-
-# target to preprocess a source file
-from4.cpp.i:
-	$(MAKE) -f CMakeFiles\5.dir\build.make CMakeFiles/5.dir/from4.cpp.i
-.PHONY : from4.cpp.i
-
-from4.s: from4.cpp.s
-
-.PHONY : from4.s
-
-# target to generate assembly for a file
-from4.cpp.s:
-	$(MAKE) -f CMakeFiles\5.dir\build.make CMakeFiles/5.dir/from4.cpp.s
-.PHONY : from4.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -176,33 +149,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\5.dir\build.make CMakeFiles/5.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-mainold.obj: mainold.cpp.obj
-
-.PHONY : mainold.obj
-
-# target to build an object file
-mainold.cpp.obj:
-	$(MAKE) -f CMakeFiles\5.dir\build.make CMakeFiles/5.dir/mainold.cpp.obj
-.PHONY : mainold.cpp.obj
-
-mainold.i: mainold.cpp.i
-
-.PHONY : mainold.i
-
-# target to preprocess a source file
-mainold.cpp.i:
-	$(MAKE) -f CMakeFiles\5.dir\build.make CMakeFiles/5.dir/mainold.cpp.i
-.PHONY : mainold.cpp.i
-
-mainold.s: mainold.cpp.s
-
-.PHONY : mainold.s
-
-# target to generate assembly for a file
-mainold.cpp.s:
-	$(MAKE) -f CMakeFiles\5.dir\build.make CMakeFiles/5.dir/mainold.cpp.s
-.PHONY : mainold.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -212,15 +158,9 @@ help:
 	@echo ... edit_cache
 	@echo ... 5
 	@echo ... rebuild_cache
-	@echo ... from4.obj
-	@echo ... from4.i
-	@echo ... from4.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... mainold.obj
-	@echo ... mainold.i
-	@echo ... mainold.s
 .PHONY : help
 
 

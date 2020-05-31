@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <cmath>
 #include <mpi.h>
-#include <sstream>
 #include <time.h>
 #include <iostream>
 #include <string>
@@ -119,7 +118,7 @@ void selectionSort(int numberOfElements, int processNumber, vector<int> &subArra
 void swapElements(int processNumber, int currentProcessNumber, int currentElementIndex, vector<int> &subArrayToSort, vector<int> &isElementSwapped, Minimum globalMinimum, Minimum localMinimum) {
     int elementToSwap;
 
-    // This is the same currentProcessNumber for which sort was called
+    // This is the same currentProcessNumber for which sort was called. We're sorting it
     if (processNumber == currentProcessNumber) {
         isElementSwapped[currentElementIndex] = 1;
 

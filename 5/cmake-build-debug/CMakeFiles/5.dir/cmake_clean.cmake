@@ -2,9 +2,7 @@ file(REMOVE_RECURSE
   "5.exe"
   "5.exe.manifest"
   "5.pdb"
-  "CMakeFiles/5.dir/from4.cpp.obj"
   "CMakeFiles/5.dir/main.cpp.obj"
-  "CMakeFiles/5.dir/mainold.cpp.obj"
   "lib5.dll.a"
 )
 
