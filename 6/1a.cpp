@@ -7,6 +7,8 @@
 #include <iostream>
 #include <string>
 #include <unistd.h>
+#include <chrono>
+#include <thread>
 
 using namespace std;
 
@@ -25,7 +27,7 @@ int main(int argc, char **argv) {
     MPI_Comm_size(MPI_COMM_WORLD, &numberOfProcesses);
     MPI_Comm_rank(MPI_COMM_WORLD, &processNumber);
 
-    int numberOfElements = 100;
+    int numberOfElements = 200;
     int chunkSize = numberOfElements / numberOfProcesses;
 
     int *mainArray;
@@ -33,8 +35,9 @@ int main(int argc, char **argv) {
 
     int firstOffset = 3;
     int secondOffset = 6;
-    clock_t start, end;
-    start = clock();
+//    clock_t start, end;
+    double start, end;
+    start = MPI_Wtime();
 //    cout << "Process number " << processNumber << " will do a scatter" << endl;
     if (processNumber == 0) {
 
@@ -66,7 +69,8 @@ int main(int argc, char **argv) {
         usleep(100000);
     }
 
-    end = clock();
+//    end = clock();
+    end = MPI_Wtime();
     if (processNumber == 0) {
         MPI_Gather(subArray, chunkSize, MPI_INT, mainArray, chunkSize, MPI_INT, 0, MPI_COMM_WORLD);
 
@@ -77,8 +81,8 @@ int main(int argc, char **argv) {
         }
         cout << endl;
 
-        double totalTime = (((double) (end - start)) / CLOCKS_PER_SEC) * 1000;
-        cout << "Total execution time = " << totalTime << " miliseconds." << endl;
+        double totalTime = ((double) (end - start));
+        cout << "Total execution time = " << totalTime << " seconds." << endl;
     } else {
         MPI_Gather(subArray, chunkSize, MPI_INT, NULL, chunkSize, MPI_INT, 0, MPI_COMM_WORLD);
     }

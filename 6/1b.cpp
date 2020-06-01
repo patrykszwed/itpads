@@ -30,15 +30,17 @@ int main(int argc, char **argv) {
     MPI_Comm_size(MPI_COMM_WORLD, &numberOfProcesses);
     MPI_Comm_rank(MPI_COMM_WORLD, &processNumber);
 
-    int numberOfElements = 100;
+    int numberOfElements = 300;
 
     int *mainArray;
     int *subArray;
 
     int firstOffset = 3;
     int secondOffset = 6;
-    clock_t start, end;
-    start = clock();
+//    clock_t start, end;
+//    start = clock();
+    double start, end;
+    start = MPI_Wtime();
 
     int maximumNumberOfProcesses = getMaximumNumberOfProcesses(numberOfProcesses);
     int chunkSize = numberOfElements / maximumNumberOfProcesses;
@@ -83,7 +85,8 @@ int main(int argc, char **argv) {
 
     }
 
-    end = clock();
+//    end = clock();
+    end = MPI_Wtime();
     if (processNumber == 0) {
         cout << endl << "-------------------------------------------------------------------" << endl;
         cout << "Final array: " << endl;
@@ -91,8 +94,8 @@ int main(int argc, char **argv) {
             cout << mainArray[i] << ", ";
         }
         cout << endl;
-        double totalTime = (((double) (end - start)) / CLOCKS_PER_SEC) * 1000;
-        cout << "Total execution time = " << totalTime << " miliseconds." << endl;
+        double totalTime = ((double) (end - start));
+        cout << "Total execution time = " << totalTime << " seconds." << endl;
     }
 
     MPI_Finalize();
